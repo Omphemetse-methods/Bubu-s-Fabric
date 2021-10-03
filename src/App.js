@@ -20,7 +20,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gray-50">
         <section className="flex justify-between px-4 py-6">
-          <button>=</button>
+          <p>Bubu's Fabric</p>
           <section className="space-x-2">
             <Link to="/">Home</Link>
             <Link to="/about">About us</Link>

@@ -2,9 +2,9 @@ const Home = (props) => {
   return (
     <section className="w-full space-y-12">
       <img
-        src="https://source.unsplash.com/nWAlCB1tyvc/1600x900"
-        className="w-full object-cover"
-        style={{ height: "60vh" }}
+        src="https://source.unsplash.com/FLzsXmNpNY8/1600x900"
+        className="w-full object-cover shadow"
+        style={{ height: "70vh" }}
       />
 
       <section className="flex justify-center">
@@ -19,7 +19,14 @@ const Home = (props) => {
       </section>
 
       <section className="flex justify-center">
-        <section className="w-8/12 grid grid-cols-3 gap-4 p-10 bg-gray-100 rounded">
+        <button className="btn btn-primary px-12 py-6">Our story</button>
+      </section>
+
+      <section className="flex flex-col items-center justify-center space-y-12">
+        <p className="text-center text-4xl font-bold">
+          A better way in clothing
+        </p>
+        <section className="w-10/12 grid grid-cols-3 gap-4 p-10 rounded">
           <div className="space-y-4">
             <p>icon</p>
             <p>Free Shipping</p>
@@ -54,7 +61,7 @@ const Home = (props) => {
       </section>
 
       <section className="flex justify-center">
-        <section className="w-8/12 bg-gray-100 p-10 grid grid-cols-2 gap-4">
+        <section className="w-10/12 p-10 grid grid-cols-2 gap-4">
           <div className="space-y-6">
             <p>Cooper Kettle</p>
             <p>
@@ -75,37 +82,6 @@ const Home = (props) => {
             <img
               src="https://source.unsplash.com/nWAlCB1tyvc/1600x900"
               className="h-auto w-full object-cover"
-            />
-          </div>
-        </section>
-      </section>
-
-      <section className="flex justify-center">
-        <section className="w-8/12 grid grid-cols-4 gap-4 items-center">
-          <div>
-            <p>Dinnerware</p>
-            <p>
-              From sandblasted copper and carefully handmade ceramics to
-              delightful antiques.
-            </p>
-            <p>View Catelogue</p>
-          </div>
-          <div className="border-2">
-            <img
-              src="https://source.unsplash.com/nWAlCB1tyvc/1600x900"
-              className="h-36 w-full object-cover"
-            />
-          </div>
-          <div className="border-2">
-            <img
-              src="https://source.unsplash.com/nWAlCB1tyvc/1600x900"
-              className="h-36 w-full object-cover"
-            />
-          </div>
-          <div className="border-2">
-            <img
-              src="https://source.unsplash.com/nWAlCB1tyvc/1600x900"
-              className="h-36 w-full object-cover"
             />
           </div>
         </section>
