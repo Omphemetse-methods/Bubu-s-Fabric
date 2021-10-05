@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = (props) => {
   return (
     <section className="w-full space-y-12">
@@ -19,7 +21,9 @@ const Home = (props) => {
       </section>
 
       <section className="flex justify-center">
-        <button className="btn btn-primary px-12 py-6">Our story</button>
+        <Link to="/about">
+          <button className="btn btn-primary px-12 py-6">Our story</button>
+        </Link>
       </section>
 
       <section className="flex flex-col items-center justify-center space-y-12">
