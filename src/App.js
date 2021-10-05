@@ -20,7 +20,9 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gray-50">
         <section className="flex justify-between px-4 py-6">
-          <p>Bubu's Fabric</p>
+          <p className="font-sans text-3xl font-bold text-gray-600">
+            Bubu's Fabric
+          </p>
           <section className="space-x-2">
             <Link to="/">Home</Link>
             <Link to="/about">About us</Link>
