@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
-        <section className="flex justify-between px-4 py-6">
+        <section className="flex justify-between items-center px-4 py-6">
           <p className="font-sans text-3xl font-bold text-gray-600">
             Bubu's Fabric
           </p>

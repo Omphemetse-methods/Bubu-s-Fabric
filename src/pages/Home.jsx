@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import shippingIcon from "./imgs/ship.png";
+import timeIcon from "./imgs/time.png";
+import packageIcon from "./imgs/package.png";
 
 const Home = (props) => {
   return (
@@ -26,13 +29,23 @@ const Home = (props) => {
         </Link>
       </section>
 
-      <section className="flex flex-col items-center justify-center space-y-12">
+      <section className="flex flex-col items-center justify-center space-y-1">
         <p className="text-center text-4xl font-bold">
           A better way in clothing
         </p>
         <section className="w-10/12 grid grid-cols-3 gap-4 p-10 rounded">
-          <div className="space-y-4">
-            <p>icon</p>
+          <div className="space-y-4 flex flex-col items-center">
+            <img src={shippingIcon} className="w-12 h-12 object-cover" />
+            <p>Delivery</p>
+            <p>
+              All of our products ship free from our facility in Chicago. We
+              pack tightly and with care. Any ceramics or glasswear are
+              guaranteed.
+            </p>
+            <p>Read more</p>
+          </div>
+          <div className="space-y-4 flex flex-col items-center">
+            <img src={timeIcon} className="w-12 h-12 object-cover" />
             <p>Free Shipping</p>
             <p>
               All of our products ship free from our facility in Chicago. We
@@ -41,18 +54,8 @@ const Home = (props) => {
             </p>
             <p>Read more</p>
           </div>
-          <div className="space-y-4">
-            <p>icon</p>
-            <p>Free Shipping</p>
-            <p>
-              All of our products ship free from our facility in Chicago. We
-              pack tightly and with care. Any ceramics or glasswear are
-              guaranteed.
-            </p>
-            <p>Read more</p>
-          </div>
-          <div className="space-y-4">
-            <p>icon</p>
+          <div className="space-y-4 flex flex-col items-center">
+            <img src={packageIcon} className="w-12 h-12 object-cover" />
             <p>Free Shipping</p>
             <p>
               All of our products ship free from our facility in Chicago. We
