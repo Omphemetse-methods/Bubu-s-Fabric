@@ -6,11 +6,11 @@ const AboutUs = (props) => {
           About us
         </p>
         <p className="text-sm text-gray-600 font-serif">
-          It starts with our designers who imagine the most relevant designs of
-          today and tomorrow. It extends to our manufacturers who obsess over
-          materials and details. It culminates with the direct delivery to you,
-          ensuring the highest quality at the lowest possible prices. Our 6
-          design values guide everything we do.
+          Born in 2021,It starts with our designers who imagine the most
+          relevant designs of today and tomorrow. It extends to our
+          manufacturers who obsess over materials and details. It culminates
+          with the direct delivery to you, ensuring the highest quality at the
+          lowest possible prices. Our 6 design values guide everything we do.
         </p>
 
         <img
