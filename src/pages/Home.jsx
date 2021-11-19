@@ -5,15 +5,17 @@ import packageIcon from "./imgs/package.png";
 
 const Home = (props) => {
   return (
-    <section className="w-full space-y-12">
+    <section className="w-full mih-h-screen space-y-12">
       <img
         src="https://source.unsplash.com/FLzsXmNpNY8/1600x900"
         className="w-full object-cover shadow"
-        style={{ height: "70vh" }}
+        style={{
+          height: "50vh",
+        }}
       />
 
       <section className="flex justify-center">
-        <section className="w-5/12">
+        <section className="w-11/12 md:w-5/12">
           <p className="text-center">
             At Bubu's Fabric, our goal is to improve the quality of every piece
             that we make. We believe that manufacturing is a sacred process. We
@@ -54,7 +56,10 @@ const Home = (props) => {
           <div className="space-y-4 flex flex-col items-center">
             <img src={timeIcon} className="w-12 h-12 object-cover" />
             <p>Time</p>
-            <p>Time is of the essence.</p>
+            <p>
+              Time is of the essence. One of our "Quality objectives" is "On
+              Time Delivery"
+            </p>
           </div>
         </section>
       </section>
