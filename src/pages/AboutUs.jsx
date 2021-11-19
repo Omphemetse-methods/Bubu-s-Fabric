@@ -1,17 +1,23 @@
 const AboutUs = (props) => {
   return (
-    <section className="flex justify-center text-center pt-12">
+    <section className="flex justify-center pt-12">
       <div className="w-7/12 space-y-8">
-        <p className="text-4xl font-sans antialsed font-bold text-gray-900">
+        <p className="text-4xl font-sans antialsed font-bold text-gray-900 text-center">
           About us
         </p>
-        <p className="text-sm text-gray-600 font-serif">
-          Born in 2021,It starts with our designers who imagine the most
-          relevant designs of today and tomorrow. It extends to our
-          manufacturers who obsess over materials and details. It culminates
-          with the direct delivery to you, ensuring the highest quality at the
-          lowest possible prices. Our 6 design values guide everything we do.
-        </p>
+        <section>
+          <p>
+            Born in 2021,Bubu's Fabric does not only pride itselves with qualify
+            craftsmanship but values client relation. It started with a son and
+            a mother. We operate from North West, where we develop new products
+            and manage the daily global operations.
+          </p>
+          <p>
+            We can help you define the right materials for your design and where
+            to find them. Experience in the industry provides a complete library
+            of fabric, trimming, harbor dashery, and ancillary service contacts.
+          </p>
+        </section>
 
         <img
           src="https://source.unsplash.com/nWAlCB1tyvc/1600x900"

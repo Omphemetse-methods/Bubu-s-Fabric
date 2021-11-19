@@ -15,10 +15,11 @@ const Home = (props) => {
       <section className="flex justify-center">
         <section className="w-5/12">
           <p className="text-center">
-            At Hokkaido, our goal is to improve the quality of every piece that
-            we make. We believe that manufacturing is a sacred process. We focus
-            on making every day essentials out of luxury materials. We push the
-            envelope from our studio in Copenhagen.
+            At Bubu's Fabric, our goal is to improve the quality of every piece
+            that we make. We believe that manufacturing is a sacred process. We
+            care about what we make and not willing to sacrifice qualify for
+            speed. We seek clients who value our labour and skill and have a
+            design-focused product.
           </p>
         </section>
       </section>
@@ -33,36 +34,27 @@ const Home = (props) => {
         <p className="text-center text-4xl font-bold">
           A better way in clothing
         </p>
-        <section className="w-10/12 grid grid-cols-3 gap-4 p-10 rounded">
-          <div className="space-y-4 flex flex-col items-center">
-            <img src={shippingIcon} className="w-12 h-12 object-cover" />
-            <p>Delivery</p>
-            <p>
-              All of our products ship free from our facility in Chicago. We
-              pack tightly and with care. Any ceramics or glasswear are
-              guaranteed.
-            </p>
-            <p>Read more</p>
-          </div>
-          <div className="space-y-4 flex flex-col items-center">
-            <img src={timeIcon} className="w-12 h-12 object-cover" />
-            <p>Free Shipping</p>
-            <p>
-              All of our products ship free from our facility in Chicago. We
-              pack tightly and with care. Any ceramics or glasswear are
-              guaranteed.
-            </p>
-            <p>Read more</p>
-          </div>
+        <section className="w-10/12 grid grid-cols-3 gap-4 p-10 rounded text-center text-xs font-sans">
           <div className="space-y-4 flex flex-col items-center">
             <img src={packageIcon} className="w-12 h-12 object-cover" />
-            <p>Free Shipping</p>
+            <p>Packaging</p>
+            <p>Folding, tagging, wrapping, labeling are all possible.</p>
+          </div>
+
+          <div className="space-y-4 flex flex-col items-center">
+            <img src={shippingIcon} className="w-12 h-12 object-cover" />
+            <p>Shipping</p>
             <p>
-              All of our products ship free from our facility in Chicago. We
-              pack tightly and with care. Any ceramics or glasswear are
-              guaranteed.
+              We can send our product directly to our customers. Orders can be
+              packed and shipped through multiple sales channels and carriers,
+              whether wholesale or retail.
             </p>
-            <p>Read more</p>
+          </div>
+
+          <div className="space-y-4 flex flex-col items-center">
+            <img src={timeIcon} className="w-12 h-12 object-cover" />
+            <p>Time</p>
+            <p>Time is of the essence.</p>
           </div>
         </section>
       </section>
