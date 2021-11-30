@@ -44,7 +44,7 @@ const PageNotFound = (props) => {
 
 const NavigationLinks = (props) => {
   return (
-    <section className="space-x-2">
+    <section className="space-x-2 filter blur">
       <NavLink
         to="/about-us"
         className={(active) =>
@@ -96,7 +96,7 @@ function App() {
       <div className="relative max-w-screen min-h-screen bg-gray-50 pb-20">
         <section className="flex justify-between items-center p-8">
           <Link to="/">
-            <p className="font-sans text-3xl font-bold text-gray-600">
+            <p className="font-indie text-3xl font-bold text-purple-700">
               Bubu's Fabric
             </p>
           </Link>
@@ -177,6 +177,24 @@ function App() {
         <section className="absolute bottom-0 left-0 right-0 bg-gray-600">
           <Footer />
         </section>
+
+        <Transition
+          show={true}
+          enter="transition-opacity duration-75"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-150"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+          className="fixed z-50 top-0 bottom-0 left-0 right-0 w-screen h-screen flex flex-col justify-center items-center "
+          style={{
+            backgroundColor: "rgba(0,0,0,0.4)",
+          }}
+        >
+          <p className="font-patrick text-4xl text-white">
+            Site under construction
+          </p>
+        </Transition>
       </div>
     </Router>
   );

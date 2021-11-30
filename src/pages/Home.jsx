@@ -6,7 +6,7 @@ import productxIcon from "./imgs/productx.jpg";
 
 const Home = (props) => {
   return (
-    <section className="w-full mih-h-screen space-y-12">
+    <section className="w-full mih-h-screen space-y-12 font-patrick">
       <img
         key="a"
         src="https://source.unsplash.com/FLzsXmNpNY8/1600x900"
@@ -17,7 +17,7 @@ const Home = (props) => {
       />
       <section className="flex justify-center">
         <section className="w-11/12 md:w-5/12">
-          <p key="b" className="text-center">
+          <p key="b" className="text-center filter blur">
             At Bubu's Fabric, our goal is to improve the quality of every piece
             that we make. We believe that manufacturing is a sacred process. We
             care about what we make and not willing to sacrifice qualify for
@@ -68,8 +68,8 @@ const Home = (props) => {
       <section className="flex justify-center">
         <section className="w-10/12 p-10 grid grid-cols-2 items-center gap-4">
           <div className="space-y-6">
-            <p>Cooper Kettle</p>
-            <p>
+            <p className="filter blur">Cooper Kettle</p>
+            <p className="filter blur">
               All product photography and description is provided by the lovely
               folks at The Good Liver. This is a real product you can purchase
               at Good Liver. This kettle is made of copper that has very good
@@ -81,7 +81,7 @@ const Home = (props) => {
               spout level. Be careful not to boil an empty kettle. This will
               result in a broken spout, handle, and lid, which can cause fire.{" "}
             </p>
-            <p>View the full product</p>
+            <p className="text-blue-600">View the full product</p>
           </div>
           <div className="bg-gradient-to-l from-purple-300 to-gray-50 p-4">
             <img src={productxIcon} className="h-auto w-full object-cover" />

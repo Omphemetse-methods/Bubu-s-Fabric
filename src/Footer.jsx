@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = (props) => {
   return (
-    <section className="flex justify-between border-t-2 border-gray-100 bg-gray-200">
+    <section className="filter blur flex justify-between border-t-2 border-gray-100 bg-gray-200">
       <p>Footer</p>
       <div className="grid grid-cols-3">
         <section className="">
