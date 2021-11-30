@@ -2,21 +2,22 @@ import { Link } from "react-router-dom";
 import shippingIcon from "./imgs/ship.png";
 import timeIcon from "./imgs/time.png";
 import packageIcon from "./imgs/package.png";
+import productxIcon from "./imgs/productx.jpg";
 
 const Home = (props) => {
   return (
     <section className="w-full mih-h-screen space-y-12">
       <img
+        key="a"
         src="https://source.unsplash.com/FLzsXmNpNY8/1600x900"
         className="w-full object-cover shadow"
         style={{
           height: "50vh",
         }}
       />
-
       <section className="flex justify-center">
         <section className="w-11/12 md:w-5/12">
-          <p className="text-center">
+          <p key="b" className="text-center">
             At Bubu's Fabric, our goal is to improve the quality of every piece
             that we make. We believe that manufacturing is a sacred process. We
             care about what we make and not willing to sacrifice qualify for
@@ -65,7 +66,7 @@ const Home = (props) => {
       </section>
 
       <section className="flex justify-center">
-        <section className="w-10/12 p-10 grid grid-cols-2 gap-4">
+        <section className="w-10/12 p-10 grid grid-cols-2 items-center gap-4">
           <div className="space-y-6">
             <p>Cooper Kettle</p>
             <p>
@@ -82,11 +83,8 @@ const Home = (props) => {
             </p>
             <p>View the full product</p>
           </div>
-          <div>
-            <img
-              src="https://source.unsplash.com/nWAlCB1tyvc/1600x900"
-              className="h-auto w-full object-cover"
-            />
+          <div className="bg-gradient-to-l from-purple-300 to-gray-50 p-4">
+            <img src={productxIcon} className="h-auto w-full object-cover" />
           </div>
         </section>
       </section>

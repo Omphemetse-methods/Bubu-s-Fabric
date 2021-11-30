@@ -4,27 +4,68 @@ import {
   Switch,
   Route,
   Link,
+  NavLink,
   useLocation,
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { Transition } from "@headlessui/react";
+import { Transition, Menu } from "@headlessui/react";
 
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Footer from "./Footer";
 import TermsOfService from "./pages/TermsOfService";
-import Products from "./pages/Products";
 
 import "./App.css";
 
-function PageNotFound(props) {
+const BasicLayout = ({ children }) => {
   return (
-    <section>
+    <section className="w-full">
+      <>{children}</>
+    </section>
+  );
+};
+
+const CenterLayout = ({ children }) => {
+  return (
+    <section className="w-8/12">
+      <>{children}</>
+    </section>
+  );
+};
+
+const PageNotFound = (props) => {
+  return (
+    <section className="w-full flex justify-center pt-20">
       <p>Page not found</p>
     </section>
   );
-}
+};
+
+const NavigationLinks = (props) => {
+  return (
+    <section className="space-x-2">
+      <NavLink
+        to="/about-us"
+        className={(active) =>
+          "" +
+          (active ? "border-b-2 border-gray-200 px-12 text-purple-500" : "")
+        }
+      >
+        About Us
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={(active) =>
+          "" +
+          (active ? "border-b-2 border-gray-200 px-12 text-purple-500" : "")
+        }
+      >
+        Contact
+      </NavLink>
+    </section>
+  );
+};
 
 const MenuBar = ({ isShowing, onClose }) => {
   return (
@@ -52,17 +93,16 @@ function App() {
 
   return (
     <Router>
-      <div className="relative w-screen min-h-screen bg-gray-50 space-y-2">
-        <section className="flex justify-between items-center py-8 px-2">
-          <p className="font-sans text-3xl font-bold text-gray-600">
-            Bubu's Fabric
-          </p>
+      <div className="relative max-w-screen min-h-screen bg-gray-50 pb-20">
+        <section className="flex justify-between items-center p-8">
+          <Link to="/">
+            <p className="font-sans text-3xl font-bold text-gray-600">
+              Bubu's Fabric
+            </p>
+          </Link>
           <div>
-            <section className="hidden md:block">
-              <Link to="/">Home</Link>
-              <Link to="/about">About us</Link>
-              <Link to="/contact">Contact us</Link>
-              <Link to="/products">Products</Link>
+            <section className="hidden flex space-x-2 md:block">
+              <NavigationLinks />
             </section>
 
             <section className="block md:hidden">
@@ -88,20 +128,53 @@ function App() {
           </div>
         </section>
 
-        <section className="flex justify-center">
-          <section className="w-full md:w-8/12">
-            <Switch>
-              <Route exact path="/" children={<Home />} />
-              <Route path="/about" children={<AboutUs />} />
-              <Route path="/contact" children={<ContactUs />} />
-              <Route path="/terms-of-service" children={<TermsOfService />} />
-              <Route path="/products" children={<Products />} />
-              <Route path="*" children={<PageNotFound />} />
-            </Switch>
-          </section>
+        <section className="flex flex-col justify-center items-center">
+          <Switch>
+            <Route
+              exact
+              path="/"
+              children={
+                <BasicLayout>
+                  <Home />
+                </BasicLayout>
+              }
+            />
+            <Route
+              path="/about-us"
+              children={
+                <CenterLayout>
+                  <AboutUs />
+                </CenterLayout>
+              }
+            />
+            <Route
+              path="/contact"
+              children={
+                <CenterLayout>
+                  <ContactUs />
+                </CenterLayout>
+              }
+            />
+            <Route
+              path="/terms-of-service"
+              children={
+                <CenterLayout>
+                  <TermsOfService />
+                </CenterLayout>
+              }
+            />
+            <Route
+              path="*"
+              children={
+                <BasicLayout>
+                  <PageNotFound />
+                </BasicLayout>
+              }
+            />
+          </Switch>
         </section>
 
-        <section className="absolute bottom-0">
+        <section className="absolute bottom-0 left-0 right-0 bg-gray-600">
           <Footer />
         </section>
       </div>
